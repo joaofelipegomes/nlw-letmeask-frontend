@@ -118,3 +118,28 @@
     @apply bg-background text-foreground;
   }
 }
+
+@keyframes grow {
+  0%,
+  100% {
+    transform: scaleY(50%);
+  }
+  50% {
+    transform: scaleY(100%);
+  }
+}
+.animate-grow {
+  animation: grow 1s ease-in-out infinite;
+}
+@keyframes shrink {
+  0%,
+  100% {
+    transform: scaleY(-100%);
+  }
+  50% {
+    transform: scaleY(-50%);
+  }
+}
+.animate-shrink {
+  animation: shrink 1s ease-in-out infinite;
+}
